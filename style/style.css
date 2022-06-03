@@ -1,0 +1,1905 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Montserrat&family=Raleway:wght@300&family=Send+Flowers&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 2em;
+}
+
+a{text-decoration: none;} 
+
+#grilla{
+  width: 100%;
+  height: 100vh;
+}
+ 
+/* declaro areas*/
+
+header{
+  grid-area: header;
+}
+
+section{
+    grid-area: section;
+}
+
+section#trabajos{
+  grid-area: trabajos;
+}
+
+article{
+  grid-area: article;
+}
+
+section#galeria{
+    grid-area: galeria;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
+
+/* MOBILE SMARTPHONE STYLE */
+
+@media(max-width: 480px){
+#grilla{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "section"
+  "trabajos"
+  "article"
+  "galeria"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+
+/* HEADER STYLES PARA TODAS LAS SECCIONES */
+
+header{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.955);
+  transition: ease-in 0.6s;
+  position: sticky;
+  
+}
+
+header.abajo{
+  position: fixed;
+  background-color: black;
+  padding: 2.5px 5px;
+  transition: ease-out 0.6s;
+}
+
+header.abajo .tituloEmpresa,
+header.abajo nav a{
+  color:white;
+  transition: ease-out 0.6s;
+}
+
+header.abajo nav a:hover{
+  color:palevioletred;
+}
+
+.logoPrincipal img{
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.tituloEmpresa{
+  padding-left: 10px;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  color: black;
+  font-size: 0.4em;
+  padding-right: 30px;
+}
+
+nav a:hover{
+  color: palevioletred;
+}
+
+/*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
+
+.imgHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/nosotros.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+.position div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.textHomeUno{
+  background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
+  font-size: 1.1em;
+  padding: 10px 5px;
+}
+.textHomeDos{
+  font-size: 0.7em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.buttonIndex{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.6s;
+}
+
+.buttonIndex:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.6s;
+}
+
+/* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
+
+#trabajos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#trabajos .carta{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+.carta:first-child{
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/kapping.png);
+}
+
+.carta:nth-child(2){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esmaltado.jpg);
+}
+.carta:nth-child(3){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esculpidas.png);
+}
+.carta h3{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.buttonInfo{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.buttonInfo:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.5s;
+}
+
+/* ARTICULO SOMOS AGUS NAILS */
+
+.gridArt{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  color:white;
+  text-align: center;
+}
+
+.gridArt h4{
+  font-size: 0.8em;
+  
+  text-align: center;
+}
+
+.gridArt p{
+  font-size: 0.5em;
+  padding: 20px;
+  text-align: center;
+}
+
+  /* SECCION GALERIA DE FOTOS CAROUSEL */
+  
+  #galeria{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    
+  .carousel{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px;
+  }
+  
+  .carousel__contenedor {
+    position: relative;
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 15%;
+    color: black;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover{
+    opacity: 100%;
+  }
+  
+  .carousel__anterior{
+     left:30px;
+  }
+  
+  .carousel__siguiente{
+    right:30px;
+  }
+  
+  .carousel__lista{
+    overflow: hidden;
+  }
+  
+  .carousel__elemento{
+    text-align: center;
+  }
+  
+  .carousel__elemento img{
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+  }
+  
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+  }
+
+/* FOOTER DE TODAS LAS SECCIONES */
+
+.imgFooter{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+#flexFooter{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  width: 100%;
+  height: 10em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+
+/* SECCION DE SERVICIOS STYLE */
+.sectionServicios{
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/imgServicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bordeServicios{
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.bordeSer{
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* MUESTRA DE SERVICIOS */
+
+.muestraServicios{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  
+}
+
+.divServicio{
+  background-color: rgba(255, 192, 203, 0.797);
+  width: 100%;
+}
+
+.divServicio img{
+  width: 100%;
+  display: flex;
+}
+
+.tituloServis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.parrafoServis{
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ padding: 10px;
+ text-align: start;
+}
+
+/* SECCION DE TURNOS STYLE */
+
+#imgTurnos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnos{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION NOSOTROS STYLE */
+
+#imgNosotros{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empleo{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION CURSOS STYLE */
+
+#imgPromocion{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promocion{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY TABLETS */
+
+@media(min-width: 480px){
+  #grilla{
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "section"
+      "trabajos"
+      "article"
+      "galeria"
+      "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+    }
+
+    /* INDEX STYLE */
+    /* HEADER */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.955);
+  transition: ease-out 0.6s;
+  position: sticky;
+}
+
+header.abajo{
+  position: fixed;
+  background-color: black;
+  padding: 2.5px 5px;
+  transition: ease-out 0.6s;
+}
+
+header.abajo .tituloEmpresa,
+header.abajo nav a{
+  color:white;
+  transition: ease-out 0.6s;
+}
+
+header.abajo nav a:hover{
+  color:palevioletred;
+}
+
+.logoPrincipal img{
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.tituloEmpresa{
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.menu{
+  color: black;
+  font-size: 0.8em;
+}
+
+nav a:hover{
+  color: palevioletred;
+}
+
+/*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
+
+.imgHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/nosotros.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+.position div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.textHomeUno{
+  background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
+  font-size: 1.1em;
+  padding: 10px 5px;
+}
+.textHomeDos{
+  font-size: 0.7em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.buttonIndex{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.6s;
+}
+
+.buttonIndex:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.6s;
+}
+
+/* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
+
+#trabajos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#trabajos .carta{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+.carta:first-child{
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/kapping.png);
+}
+
+.carta:nth-child(2){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esmaltado.jpg);
+}
+.carta:nth-child(3){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esculpidas.png);
+}
+.carta h3{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.buttonInfo{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.buttonInfo:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.5s;
+}
+
+/* ARTICULO SOMOS AGUS NAILS */
+
+.gridArt{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  color:white;
+  text-align: center;
+}
+
+.gridArt h4{
+  font-size: 0.8em;
+  
+  text-align: center;
+}
+
+.gridArt p{
+  font-size: 0.5em;
+  padding: 20px;
+  text-align: center;
+}
+
+  /* SECCION GALERIA DE FOTOS CAROUSEL */
+  
+  #galeria{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    
+  .carousel{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px;
+  }
+  
+  .carousel__contenedor {
+    position: relative;
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 15%;
+    color: black;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover{
+    opacity: 100%;
+  }
+  
+  .carousel__anterior{
+     left:5px;
+  }
+  
+  .carousel__siguiente{
+    right:5px;
+  }
+  
+  .carousel__lista{
+    overflow: hidden;
+  }
+  
+  .carousel__elemento{
+    text-align: center;
+  }
+  
+  .carousel__elemento img{
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+  }
+  
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+  }
+
+/* FOOTER DE TODAS LAS SECCIONES */
+
+.imgFooter{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+#flexFooter{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  width: 100%;
+  height: 10em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+/* SECCION DE SERVICIOS STYLE */
+.sectionServicios{
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/imgServicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bordeServicios{
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.bordeSer{
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* MUESTRA DE SERVICIOS */
+
+.muestraServicios{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  
+}
+
+.divServicio{
+  background-color: rgba(255, 192, 203, 0.797);
+  width: 100%;
+}
+
+.divServicio img{
+  width: 100%;
+  display: flex;
+}
+
+.tituloServis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.parrafoServis{
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ padding: 10px;
+ text-align: start;
+}
+
+/* SECCION DE TURNOS STYLE */
+
+#imgTurnos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnos{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION NOSOTROS STYLE */
+
+#imgNosotros{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empleo{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION CURSOS STYLE */
+
+#imgPromocion{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promocion{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLETS EJE: IPADS MEDIA QUERY */
+
+@media(min-width: 770px){
+  #grilla{
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "section"
+      "trabajos"
+      "article"
+      "galeria"
+      "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+    }
+
+    /* INDEX STYLE */
+    /* HEADER */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.955);
+  transition: ease-out 0.6s;
+  position: sticky;
+}
+
+header.abajo{
+  position: fixed;
+  background-color: black;
+  padding: 2.5px 5px;
+  transition: ease-out 0.6s;
+}
+
+header.abajo .tituloEmpresa,
+header.abajo nav a{
+  color:white;
+  transition: ease-out 0.6s;
+}
+
+header.abajo nav a:hover{
+  color:palevioletred;
+}
+
+.logoPrincipal img{
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.tituloEmpresa{
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.menu{
+  color: black;
+  font-size: 0.8em;
+}
+
+nav a:hover{
+  color: palevioletred;
+}
+
+/*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
+
+.imgHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/nosotros.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+.position div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.textHomeUno{
+  background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
+  font-size: 1.1em;
+  padding: 10px 5px;
+}
+.textHomeDos{
+  font-size: 0.7em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.buttonIndex{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.6s;
+}
+
+.buttonIndex:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.6s;
+}
+
+/* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
+
+#trabajos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#trabajos .carta{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+.carta:first-child{
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/kapping.png);
+}
+
+.carta:nth-child(2){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esmaltado.jpg);
+}
+.carta:nth-child(3){
+  height: 90vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esculpidas.png);
+}
+.carta h3{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.buttonInfo{
+  font-size: 1em;
+  padding: 5px 5px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.buttonInfo:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.5s;
+}
+
+/* ARTICULO SOMOS AGUS NAILS */
+
+.gridArt{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  color:white;
+  text-align: center;
+}
+
+.gridArt h4{
+  font-size: 0.8em;
+  
+  text-align: center;
+}
+
+.gridArt p{
+  font-size: 0.5em;
+  padding: 20px;
+  text-align: center;
+}
+
+  /* SECCION GALERIA DE FOTOS CAROUSEL */
+  
+  #galeria{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    
+  .carousel{
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px;
+  }
+  
+  .carousel__contenedor {
+    position: relative;
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 15%;
+    color: black;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover{
+    opacity: 100%;
+  }
+  
+  .carousel__anterior{
+     left:5px;
+  }
+  
+  .carousel__siguiente{
+    right:5px;
+  }
+  
+  .carousel__lista{
+    overflow: hidden;
+  }
+  
+  .carousel__elemento{
+    text-align: center;
+  }
+  
+  .carousel__elemento img{
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+  }
+  
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+  }
+
+/* FOOTER DE TODAS LAS SECCIONES */
+
+.imgFooter{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+#flexFooter{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  width: 100%;
+  height: 10em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+/* SECCION DE SERVICIOS STYLE */
+.sectionServicios{
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/imgServicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bordeServicios{
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.bordeSer{
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* MUESTRA DE SERVICIOS */
+
+.muestraServicios{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  
+}
+
+.divServicio{
+  background-color: rgba(255, 192, 203, 0.797);
+  width: 100%;
+}
+
+.divServicio img{
+  width: 100%;
+  display: flex;
+}
+
+.tituloServis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.parrafoServis{
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+ padding: 10px;
+ text-align: start;
+}
+
+/* SECCION DE TURNOS STYLE */
+
+#imgTurnos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.turnos{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION NOSOTROS STYLE */
+
+#imgNosotros{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empleo{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SECCION CURSOS STYLE */
+
+#imgPromocion{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.promocion{
+  font-size: 0.8em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1024px){
+
+/* DESKTOP */  
+/* STYLE INDEX */
+/* LOGO, TITULO Y MENU CON TRANSICION */
+
+  #grilla{
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "section"
+      "trabajos"
+      "article"
+      "galeria"
+      "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+    }
+
+header{
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.955);
+  transition: ease-out 0.6s;
+  position: sticky;
+}
+
+header.abajo{
+  position: fixed;
+  background-color: black;
+  padding: 2.5px 5px;
+  transition: ease-out 0.6s;
+}
+
+header.abajo .tituloEmpresa,
+header.abajo nav a{
+  color:white;
+  transition: ease-out 0.6s;
+}
+
+header.abajo nav a:hover{
+  color:palevioletred;
+}
+
+.logoPrincipal img{
+  height: 70px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+.tituloEmpresa{
+  font-size: 1em;
+  font-weight: bold;
+}
+.menu{
+  color: black;
+  font-size: 0.8em;
+  padding-right: 30px;
+}
+
+nav a:hover{
+  color: palevioletred;
+}
+
+/*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
+
+.imgHome{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 40px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/nosotros.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.position div{
+  color: white;
+  text-align: end;
+  padding: 40px 20px;
+  position: static;
+}
+
+.textHomeUno{
+  position: static;
+  background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
+  font-size: 2em;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textHomeDos{
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.buttonIndex{
+  position: static;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 25px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.buttonIndex:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.5s;
+}
+
+/* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
+
+#trabajos{
+  background-color: rgb(30, 30, 30);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 86vh;
+  gap: 10px;
+  padding-top: 15px;
+  
+}
+
+#trabajos .carta{
+  position: static;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carta:first-child{
+  position: static;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/kapping.png);
+}
+
+.carta:nth-child(2){
+  position: static;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esmaltado.jpg);
+}
+.carta:nth-child(3){
+  position: static;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esculpidas.png);
+}
+
+.carta h3{
+  position: static;
+  font-size: 2em;
+  padding: 20px;
+  margin: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.buttonInfo{
+  position: static;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.buttonInfo:hover{
+  background-color: black;
+  color: palevioletred;
+  transition: ease-out 0.5s;
+}
+
+/* ARTICULO SOMOS AGUS NAILS */
+
+.gridArt{
+  height: 30vh;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  display: grid;
+  grid-template-columns: 1fr 2r;
+  grid-template-rows: 3fr;
+  padding: 100px;
+  color: white;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .gridArt h4{
+    font-size: 1em;
+    padding: 30px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* SECCION GALERIA DE FOTOS CAROUSEL */
+  
+#galeria{
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ }
+  
+.carousel{
+  max-width: 1200px;
+	width: 100%;
+	margin: 50px;
+}
+
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  border-radius: 15%;
+  color: white;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+  opacity: 100%;
+}
+
+.carousel__anterior{
+   left:-30px;
+}
+
+.carousel__siguiente{
+  right:-30px;
+}
+
+.carousel__lista{
+  overflow: hidden;
+}
+
+.carousel__elemento{
+  text-align: center;
+}
+
+.carousel__elemento img{
+  width: 15em;
+  height: 15em;
+  border-radius: 100%;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+/* FOOTER DE TODAS LAS SECCIONES */
+
+.imgFooter{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+#flexFooter span a{
+  padding: 20px;
+}
+
+#flexFooter span{
+  width: 100%;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pieFooter{
+  color: white;
+}
+
+/* STYLE DE SERVICIOS*/
+
+.bordeServicios{
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  width: 5em;
+  height: 1.5em;
+  text-align: center;
+}
+
+.bordeSer{
+  color: black;
+  font-size: 1em;
+  font-weight: bolder;
+  width: 35em;
+  text-align: center;
+}
+
+.sectionServicios{
+    height: 100vh;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/imgServicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* SECCION DE SERVICIOS */
+
+  .muestraServicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    padding: 20px;
+    background: rgba(3, 2, 12, 0.797);
+  }
+
+  .divServicio{
+    background-color: rgba(255, 192, 203, 0.797);
+    width: 100%;
+    height: 40hv; 
+    
+  }
+
+  .divServicio img{
+    width: 100%;
+    height: 15em;
+    display: flex;
+  }
+  
+  .tituloServis{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .parrafoServis{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   padding: 10px;
+   text-align: start;
+  }
+
+ /* TURNOS DE STYLE */
+
+ #imgTurnos{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.turnos{
+  padding: 250px 400px 200px 400px;
+  width: 25%;
+  font-size: 1em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.50);
+  text-align: center;
+}
+
+
+
+/* NOSOTROS STYLE */
+
+#imgNosotros{
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.empleo{
+  padding: 250px 200px 200px 600px;
+  width: 25%;
+  font-size: 1em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.30);
+  text-align: center;
+}
+
+/* CURSOS STYLE */
+
+#imgPromocion{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  background-size: cover;
+}
+.promocion{
+  padding: 250px 200px 200px 600px;
+  width: 25%;
+  font-size: 1em;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(5, 7, 12, 0.30);
+  text-align: center;
+}
+}
