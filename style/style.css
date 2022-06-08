@@ -13,6 +13,7 @@ html{
 
 body{
   font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a{text-decoration: none;} 
@@ -192,16 +193,16 @@ nav a:hover{
   background-position: center center;
 }
 .carta:first-child{
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/kapping.png);
 }
 
 .carta:nth-child(2){
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esmaltado.jpg);
 }
 .carta:nth-child(3){
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/esculpidas.png);
 }
 .carta h3{
