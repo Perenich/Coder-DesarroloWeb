@@ -70,36 +70,7 @@ footer{
 
 /* HEADER STYLES PARA TODAS LAS SECCIONES */
 
-header{
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(236, 236, 236, 0.955);
-  transition: ease-in 0.6s;
-  position: sticky;
-  
-}
-
-header.abajo{
-  position: fixed;
-  background-color: black;
-  padding: 2.5px 5px;
-  transition: ease-out 0.6s;
-}
-
-header.abajo .tituloEmpresa,
-header.abajo nav a{
-  color:white;
-  transition: ease-out 0.6s;
-}
-
-header.abajo nav a:hover{
-  color:palevioletred;
-}
-
-.logoPrincipal img{
+.logoPrincipal{
   height: 30px;
   margin-right: 5px;
   border-radius: 100%;
@@ -111,10 +82,6 @@ header.abajo nav a:hover{
   font-weight: bold;
 }
 .menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding-left: 30px;
   color: black;
   font-size: 0.4em;
@@ -251,79 +218,6 @@ nav a:hover{
 
   /* SECCION GALERIA DE FOTOS CAROUSEL */
   
-  #galeria{
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-    
-  .carousel{
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px;
-  }
-  
-  .carousel__contenedor {
-    position: relative;
-  }
-  
-  .carousel__anterior,
-  .carousel__siguiente{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    border-radius: 15%;
-    color: black;
-  }
-  
-  .carousel__anterior:hover,
-  .carousel__siguiente:hover{
-    opacity: 100%;
-  }
-  
-  .carousel__anterior{
-     left:30px;
-  }
-  
-  .carousel__siguiente{
-    right:30px;
-  }
-  
-  .carousel__lista{
-    overflow: hidden;
-  }
-  
-  .carousel__elemento{
-    text-align: center;
-  }
-  
-  .carousel__elemento img{
-    width: 8em;
-    height: 8em;
-    border-radius: 100%;
-  }
-  
-  .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-  }
-  
-  .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-  }
-  
-  .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-  }
 
 /* FOOTER DE TODAS LAS SECCIONES */
 
@@ -539,35 +433,7 @@ nav a:hover{
     /* INDEX STYLE */
     /* HEADER */
 
-header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(236, 236, 236, 0.955);
-  transition: ease-out 0.6s;
-  position: sticky;
-}
-
-header.abajo{
-  position: fixed;
-  background-color: black;
-  padding: 2.5px 5px;
-  transition: ease-out 0.6s;
-}
-
-header.abajo .tituloEmpresa,
-header.abajo nav a{
-  color:white;
-  transition: ease-out 0.6s;
-}
-
-header.abajo nav a:hover{
-  color:palevioletred;
-}
-
-.logoPrincipal img{
+.logoPrincipal{
   height: 50px;
   margin-right: 5px;
   border-radius: 100%;
@@ -712,80 +578,6 @@ nav a:hover{
 
   /* SECCION GALERIA DE FOTOS CAROUSEL */
   
-  #galeria{
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-    
-  .carousel{
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px;
-  }
-  
-  .carousel__contenedor {
-    position: relative;
-  }
-  
-  .carousel__anterior,
-  .carousel__siguiente{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    border-radius: 15%;
-    color: black;
-  }
-  
-  .carousel__anterior:hover,
-  .carousel__siguiente:hover{
-    opacity: 100%;
-  }
-  
-  .carousel__anterior{
-     left:5px;
-  }
-  
-  .carousel__siguiente{
-    right:5px;
-  }
-  
-  .carousel__lista{
-    overflow: hidden;
-  }
-  
-  .carousel__elemento{
-    text-align: center;
-  }
-  
-  .carousel__elemento img{
-    width: 8em;
-    height: 8em;
-    border-radius: 100%;
-  }
-  
-  .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-  }
-  
-  .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-  }
-  
-  .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-  }
-
 /* FOOTER DE TODAS LAS SECCIONES */
 
 .imgFooter{
@@ -999,35 +791,8 @@ nav a:hover{
     /* INDEX STYLE */
     /* HEADER */
 
-header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(236, 236, 236, 0.955);
-  transition: ease-out 0.6s;
-  position: sticky;
-}
 
-header.abajo{
-  position: fixed;
-  background-color: black;
-  padding: 2.5px 5px;
-  transition: ease-out 0.6s;
-}
-
-header.abajo .tituloEmpresa,
-header.abajo nav a{
-  color:white;
-  transition: ease-out 0.6s;
-}
-
-header.abajo nav a:hover{
-  color:palevioletred;
-}
-
-.logoPrincipal img{
+.logoPrincipal{
   height: 50px;
   margin-right: 5px;
   border-radius: 100%;
@@ -1040,10 +805,6 @@ header.abajo nav a:hover{
 .menu{
   color: black;
   font-size: 0.8em;
-}
-
-nav a:hover{
-  color: palevioletred;
 }
 
 /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
@@ -1172,79 +933,6 @@ nav a:hover{
 
   /* SECCION GALERIA DE FOTOS CAROUSEL */
   
-  #galeria{
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-    
-  .carousel{
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px;
-  }
-  
-  .carousel__contenedor {
-    position: relative;
-  }
-  
-  .carousel__anterior,
-  .carousel__siguiente{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    border-radius: 15%;
-    color: black;
-  }
-  
-  .carousel__anterior:hover,
-  .carousel__siguiente:hover{
-    opacity: 100%;
-  }
-  
-  .carousel__anterior{
-     left:5px;
-  }
-  
-  .carousel__siguiente{
-    right:5px;
-  }
-  
-  .carousel__lista{
-    overflow: hidden;
-  }
-  
-  .carousel__elemento{
-    text-align: center;
-  }
-  
-  .carousel__elemento img{
-    width: 8em;
-    height: 8em;
-    border-radius: 100%;
-  }
-  
-  .carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-  }
-  
-  .carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-  }
-  
-  .carousel__indicadores .glider-dot.active {
-    opacity: 1;
-  }
 
 /* FOOTER DE TODAS LAS SECCIONES */
 
@@ -1464,46 +1152,23 @@ nav a:hover{
       "article"
       "galeria"
       "footer";
-      grid-template-columns: 100%;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
 
-header{
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  background-color: rgba(236, 236, 236, 0.955);
-  transition: ease-out 0.6s;
-  position: sticky;
-}
+    body{
 
-header.abajo{
-  position: fixed;
-  background-color: black;
-  padding: 2.5px 5px;
-  transition: ease-out 0.6s;
-}
+      background-color:linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);;
+    }
 
-header.abajo .tituloEmpresa,
-header.abajo nav a{
-  color:white;
-  transition: ease-out 0.6s;
-}
-
-header.abajo nav a:hover{
-  color:palevioletred;
-}
-
-.logoPrincipal img{
+.logoPrincipal{
   height: 70px;
   margin-right: 5px;
   border-radius: 100%;
 }
 
 .tituloEmpresa{
+  color: black;
   font-size: 1em;
   font-weight: bold;
 }
@@ -1511,10 +1176,6 @@ header.abajo nav a:hover{
   color: black;
   font-size: 0.8em;
   padding-right: 30px;
-}
-
-nav a:hover{
-  color: palevioletred;
 }
 
 /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
@@ -1643,7 +1304,6 @@ nav a:hover{
 
 .gridArt{
   height: 30vh;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
   display: grid;
   grid-template-columns: 1fr 2r;
   grid-template-rows: 3fr;
@@ -1666,80 +1326,8 @@ nav a:hover{
 
   /* SECCION GALERIA DE FOTOS CAROUSEL */
   
-#galeria{
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
- }
-  
-.carousel{
-  max-width: 1200px;
-	width: 100%;
-	margin: 50px;
-}
 
-.carousel__contenedor {
-  position: relative;
-}
 
-.carousel__anterior,
-.carousel__siguiente{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: none;
-  top: calc(50% - 35px);
-  cursor: pointer;
-  line-height: 30px;
-  border-radius: 15%;
-  color: white;
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover{
-  opacity: 100%;
-}
-
-.carousel__anterior{
-   left:-30px;
-}
-
-.carousel__siguiente{
-  right:-30px;
-}
-
-.carousel__lista{
-  overflow: hidden;
-}
-
-.carousel__elemento{
-  text-align: center;
-}
-
-.carousel__elemento img{
-  width: 15em;
-  height: 15em;
-  border-radius: 100%;
-}
-
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #fff;
-	opacity: .2;
-	border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
 
 /* FOOTER DE TODAS LAS SECCIONES */
 
@@ -1755,7 +1343,6 @@ nav a:hover{
 
 #flexFooter span{
   width: 100%;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
   height: 10em;
   display: flex;
   align-items: center;
