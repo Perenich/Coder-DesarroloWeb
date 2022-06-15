@@ -1481,8 +1481,7 @@ nav a:hover{
 }
 .promocion{
   padding: 250px 200px 200px 600px;
-  width: 25%;
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
