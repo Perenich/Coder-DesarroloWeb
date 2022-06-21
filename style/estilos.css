@@ -49,7 +49,6 @@ footer {
   grid-area: footer;
 }
 
-/* MOBILE SMARTPHONE STYLE */
 @media (max-width: 480px) {
   #grilla {
     display: grid;
@@ -76,10 +75,6 @@ footer {
     color: black;
     font-size: 0.4em;
     padding-right: 30px;
-  }
-
-  nav a:hover {
-    color: palevioletred;
   }
 
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
@@ -123,7 +118,6 @@ footer {
     color: white;
     transition: ease-out 0.6s;
   }
-
   .buttonIndex:hover {
     background-color: black;
     color: palevioletred;
@@ -184,7 +178,6 @@ footer {
     color: white;
     transition: ease-out 0.5s;
   }
-
   .buttonInfo:hover {
     background-color: black;
     color: palevioletred;
@@ -209,7 +202,6 @@ footer {
     text-align: center;
   }
 
-  /* SECCION GALERIA DE FOTOS CAROUSEL */
   /* FOOTER DE TODAS LAS SECCIONES */
   .imgFooter {
     width: 25px;
@@ -375,7 +367,6 @@ footer {
     justify-content: center;
   }
 }
-/* MEDIA QUERY TABLETS */
 @media (min-width: 480px) {
   #grilla {
     display: grid;
@@ -400,10 +391,6 @@ footer {
   .menu {
     color: black;
     font-size: 0.8em;
-  }
-
-  nav a:hover {
-    color: palevioletred;
   }
 
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
@@ -447,7 +434,6 @@ footer {
     color: white;
     transition: ease-out 0.6s;
   }
-
   .buttonIndex:hover {
     background-color: black;
     color: palevioletred;
@@ -508,7 +494,6 @@ footer {
     color: white;
     transition: ease-out 0.5s;
   }
-
   .buttonInfo:hover {
     background-color: black;
     color: palevioletred;
@@ -533,7 +518,6 @@ footer {
     text-align: center;
   }
 
-  /* SECCION GALERIA DE FOTOS CAROUSEL */
   /* FOOTER DE TODAS LAS SECCIONES */
   .imgFooter {
     width: 40px;
@@ -699,7 +683,6 @@ footer {
     justify-content: center;
   }
 }
-/* TABLETS EJE: IPADS MEDIA QUERY */
 @media (min-width: 770px) {
   #grilla {
     display: grid;
@@ -767,7 +750,6 @@ footer {
     color: white;
     transition: ease-out 0.6s;
   }
-
   .buttonIndex:hover {
     background-color: black;
     color: palevioletred;
@@ -828,7 +810,6 @@ footer {
     color: white;
     transition: ease-out 0.5s;
   }
-
   .buttonInfo:hover {
     background-color: black;
     color: palevioletred;
@@ -853,7 +834,6 @@ footer {
     text-align: center;
   }
 
-  /* SECCION GALERIA DE FOTOS CAROUSEL */
   /* FOOTER DE TODAS LAS SECCIONES */
   .imgFooter {
     width: 40px;
@@ -1019,8 +999,8 @@ footer {
     justify-content: center;
   }
 }
+/* DESKTOP */
 @media (min-width: 1024px) {
-  /* DESKTOP */
   /* STYLE INDEX */
   /* LOGO, TITULO Y MENU CON TRANSICION */
   #grilla {
@@ -1028,10 +1008,6 @@ footer {
     grid-template-areas: "header" "section" "trabajos" "article" "galeria" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  }
-
-  body {
-    background-color: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
 
   .logoPrincipal {
@@ -1102,7 +1078,6 @@ footer {
     color: white;
     transition: ease-out 0.5s;
   }
-
   .buttonIndex:hover {
     background-color: black;
     color: palevioletred;
@@ -1165,7 +1140,6 @@ footer {
     color: white;
     transition: ease-out 0.5s;
   }
-
   .buttonInfo:hover {
     background-color: black;
     color: palevioletred;
@@ -1174,28 +1148,35 @@ footer {
 
   /* ARTICULO SOMOS AGUS NAILS */
   .gridArt {
-    height: 30vh;
     display: grid;
-    grid-template-columns: 1fr 2r;
-    grid-template-rows: 3fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr;
     padding: 100px;
     color: white;
     text-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .gridArt h4 {
-    font-size: 1em;
-    padding: 30px;
-    text-align: start;
+    position: static;
+    font-size: 1.5em;
+    padding: 50px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  .gridArt p {
+    position: static;
+    font-size: 1em;
+    text-align: start;
+  }
+
   /* SECCION GALERIA DE FOTOS CAROUSEL */
+  #galeria img {
+    height: 60vh;
+  }
+
   /* FOOTER DE TODAS LAS SECCIONES */
   .imgFooter {
     width: 50px;
