@@ -1,4 +1,5 @@
 @import "variables";
+@import "operaciones";
 @import "generales";
 @import "movie";
 @import "tablets";
@@ -207,12 +208,6 @@
 
 
 /* FOOTER DE TODAS LAS SECCIONES */
-
-.imgFooter{
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
 
 #flexFooter{
   span{

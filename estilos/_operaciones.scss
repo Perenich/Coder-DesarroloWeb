@@ -1,0 +1,48 @@
+/*Aplico lo visto en clase de SASS||*/
+
+$footer: (
+    in: 100%,
+    fb: 100%,
+    wtp: 100%,
+);
+
+@each $social, $radius in $footer {
+    .imgFooter--#{$social}{
+        border-radius: $radius;
+    }
+    
+}
+
+
+.redSocial{
+    opacity: $opacity;
+}
+
+.imgFooter--fb{
+    @extend .redSocial;
+}
+
+.imgFooter--in{
+    @extend .redSocial;
+}
+
+.imgFooter--wtp{
+    @extend .redSocial;
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.imgFooter--fb{
+    @include sizes (40px, 40px);
+}
+
+.imgFooter--in{
+    @include sizes (40px, 40px);
+}
+
+.imgFooter--wtp{
+    @include sizes (40px, 40px);
+}

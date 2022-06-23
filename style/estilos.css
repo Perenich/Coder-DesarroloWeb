@@ -1,4 +1,36 @@
+/*Aplico lo visto en clase de SASS||*/
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Montserrat&family=Raleway:wght@300&family=Send+Flowers&display=swap");
+.imgFooter--in {
+  border-radius: 100%;
+}
+
+.imgFooter--fb {
+  border-radius: 100%;
+}
+
+.imgFooter--wtp {
+  border-radius: 100%;
+}
+
+.redSocial, .imgFooter--wtp, .imgFooter--in, .imgFooter--fb {
+  opacity: 0.9;
+}
+
+.imgFooter--fb {
+  width: 40px;
+  height: 40px;
+}
+
+.imgFooter--in {
+  width: 40px;
+  height: 40px;
+}
+
+.imgFooter--wtp {
+  width: 40px;
+  height: 40px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -203,12 +235,6 @@ footer {
   }
 
   /* FOOTER DE TODAS LAS SECCIONES */
-  .imgFooter {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-  }
-
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     width: 100%;
@@ -519,12 +545,6 @@ footer {
   }
 
   /* FOOTER DE TODAS LAS SECCIONES */
-  .imgFooter {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-  }
-
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     width: 100%;
@@ -835,12 +855,6 @@ footer {
   }
 
   /* FOOTER DE TODAS LAS SECCIONES */
-  .imgFooter {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-  }
-
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     width: 100%;
@@ -1178,12 +1192,6 @@ footer {
   }
 
   /* FOOTER DE TODAS LAS SECCIONES */
-  .imgFooter {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-  }
-
   #flexFooter span a {
     padding: 20px;
   }
