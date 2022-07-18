@@ -249,34 +249,35 @@ footer {
 
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
-    height: 100vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/imgServicio.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
-
-  .bordeServicios {
+  .sectionServicios h1 {
     color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-
-  .bordeSer {
-    color: black;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
+    padding-bottom: 15px;
+  }
+  .sectionServicios p {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.251);
   }
 
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
     gap: 10px;
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -367,30 +368,53 @@ footer {
   }
 
   /* SECCION CURSOS STYLE */
-  #imgPromocion {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg);
+  .cursoFondo {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+  .cursoFondo h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .cursoFondo p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 95%;
   }
 
-  .promocion {
-    font-size: 0.8em;
-    color: white;
+  .cursoGrid {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-row-gap: 10px;
+    padding: 8px;
+  }
+  .cursoGrid h5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .cursoGrid p {
+    padding-bottom: 8px;
+  }
+  .cursoGrid .card {
+    background-color: rgba(255, 192, 203, 0.797);
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: palevioletred;
+    transition: ease-out 0.5s;
   }
 }
 @media (min-width: 480px) {
@@ -559,34 +583,35 @@ footer {
 
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
-    height: 100vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/imgServicio.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
-
-  .bordeServicios {
+  .sectionServicios h1 {
     color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-
-  .bordeSer {
-    color: black;
-    font-size: 0.8em;
+    font-size: 2em;
     text-align: center;
+    padding-bottom: 15px;
+  }
+  .sectionServicios p {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.251);
   }
 
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
     gap: 10px;
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -677,30 +702,53 @@ footer {
   }
 
   /* SECCION CURSOS STYLE */
-  #imgPromocion {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg);
+  .cursoFondo {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+  .cursoFondo h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .cursoFondo p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 50%;
   }
 
-  .promocion {
-    font-size: 0.8em;
-    color: white;
+  .cursoGrid {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-row-gap: 10px;
+    padding: 8px;
+  }
+  .cursoGrid h5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .cursoGrid p {
+    padding-bottom: 8px;
+  }
+  .cursoGrid .card {
+    background-color: rgba(255, 192, 203, 0.797);
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: palevioletred;
+    transition: ease-out 0.5s;
   }
 }
 @media (min-width: 770px) {
@@ -869,34 +917,35 @@ footer {
 
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
-    height: 100vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/imgServicio.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
-
-  .bordeServicios {
+  .sectionServicios h1 {
     color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-
-  .bordeSer {
-    color: black;
-    font-size: 0.8em;
+    font-size: 2.5em;
     text-align: center;
+    padding-bottom: 15px;
+  }
+  .sectionServicios p {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.251);
   }
 
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
     gap: 10px;
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -987,30 +1036,53 @@ footer {
   }
 
   /* SECCION CURSOS STYLE */
-  #imgPromocion {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg);
+  .cursoFondo {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+  .cursoFondo h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .cursoFondo p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 50%;
   }
 
-  .promocion {
-    font-size: 0.8em;
-    color: white;
+  .cursoGrid {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-row-gap: 10px;
+    padding: 8px;
+  }
+  .cursoGrid h5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .cursoGrid p {
+    padding-bottom: 8px;
+  }
+  .cursoGrid .card {
+    background-color: rgba(255, 192, 203, 0.797);
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: palevioletred;
+    transition: ease-out 0.5s;
   }
 }
 /* DESKTOP */
@@ -1209,29 +1281,29 @@ footer {
   }
 
   /* STYLE DE SERVICIOS*/
-  .bordeServicios {
-    color: white;
-    font-size: 3em;
-    font-weight: bolder;
-    width: 5em;
-    height: 1.5em;
-    text-align: center;
-  }
-
-  .bordeSer {
-    color: black;
-    font-size: 1em;
-    font-weight: bolder;
-    width: 35em;
-    text-align: center;
-  }
-
   .sectionServicios {
-    height: 100vh;
-    padding-top: 100px;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/imgServicio.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionServicios h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .sectionServicios p {
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.251);
   }
 
   /* SECCION DE SERVICIOS */
@@ -1241,7 +1313,7 @@ footer {
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     padding: 20px;
-    background: rgba(3, 2, 12, 0.797);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
 
   .divServicio {
@@ -1300,41 +1372,69 @@ footer {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 100vh;
     background-size: cover;
   }
 
   .empleo {
-    padding: 250px 200px 200px 600px;
+    padding: 250px 400px 200px 400px;
     width: 25%;
     font-size: 1em;
     color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.3);
+    background: rgba(5, 7, 12, 0.5);
     text-align: center;
   }
 
   /* CURSOS STYLE */
-  #imgPromocion {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg);
+  .cursoFondo {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    min-height: 100vh;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cursoFondo h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .cursoFondo p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 50%;
   }
 
-  .promocion {
-    padding: 250px 200px 200px 600px;
-    font-size: 2em;
-    color: white;
+  .cursoGrid {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.3);
-    text-align: center;
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    padding: 8px;
+  }
+  .cursoGrid h5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .cursoGrid p {
+    padding-bottom: 8px;
+  }
+  .cursoGrid .card {
+    background-color: rgba(255, 192, 203, 0.797);
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: palevioletred;
+    transition: ease-out 0.5s;
   }
 }/*# sourceMappingURL=estilos.css.map */

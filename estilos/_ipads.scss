@@ -178,35 +178,35 @@
   
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios{
-    height: 100vh;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)),url(../img/imgServicio.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg); 
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
-  
-  .bordeServicios{
-    color: white;
-    font-size: 1.2em;
-    font-weight: bolder;
-  }
-  
-  .bordeSer{
-    color: $color;
-    font-size: 0.8em;
-    text-align: center;
-  }
-  
+      h1{
+        color:white;
+        font-size: 2.5em;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      p{
+        color: $color;
+        font-size: 1.5em;
+        text-align: center;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.251);
+      }
+     }
   /* MUESTRA DE SERVICIOS */
   
   .muestraServicios{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
     gap: 10px;
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),url(../img/ladrillo.jpg);
@@ -303,30 +303,55 @@
   
   /* SECCION CURSOS STYLE */
   
-  #imgPromocion{
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.1)), url(../img/gifcard.jpg); 
+  .cursoFondo{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg); 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-  }
+    align-items: center;
+      h1{
+        color:white;
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      p{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        width: 50%;
+      }
   
-  .promocion{
-    font-size: 0.8em;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: rgba(5, 7, 12, 0.50);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
+      .cursoGrid{
+        background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-row-gap: 10px; 
+        padding: 8px;
+        h5{
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+        p{
+          padding-bottom: 8px;
+        }
+        .card{
+          background-color: rgba(255, 192, 203, 0.797);
+        }
+      }
+  
+      .btn{
+        &:hover{
+          background-color: $color;
+          color: palevioletred;
+          transition: ease-out 0.5s;
+        }
+      }
   
   }
