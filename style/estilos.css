@@ -81,6 +81,16 @@ footer {
   grid-area: footer;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.abajo {
+  color: white;
+  background-color: red;
+}
+
 @media (max-width: 480px) {
   #grilla {
     display: grid;
@@ -88,27 +98,23 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
   }
-
   /* HEADER STYLES PARA TODAS LAS SECCIONES */
   .logoPrincipal {
     height: 30px;
     margin-right: 5px;
     border-radius: 100%;
   }
-
   .tituloEmpresa {
     padding-left: 10px;
     font-size: 0.5em;
     font-weight: bold;
   }
-
   .menu {
     padding-left: 30px;
     color: black;
     font-size: 0.4em;
     padding-right: 30px;
   }
-
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
   .imgHome {
     display: flex;
@@ -119,7 +125,6 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .position div {
     display: flex;
     flex-direction: column;
@@ -128,19 +133,16 @@ footer {
     text-align: center;
     color: white;
   }
-
   .textHomeUno {
     background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
     font-size: 1.1em;
     padding: 10px 5px;
   }
-
   .textHomeDos {
     font-size: 0.7em;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-
   .buttonIndex {
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
@@ -155,7 +157,6 @@ footer {
     color: palevioletred;
     transition: ease-out 0.6s;
   }
-
   /* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
   #trabajos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -166,7 +167,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   #trabajos .carta {
     color: white;
     display: flex;
@@ -177,29 +177,24 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .carta:first-child {
     height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/kapping.png);
   }
-
   .carta:nth-child(2) {
     height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esmaltado.jpg);
   }
-
   .carta:nth-child(3) {
     height: 100vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esculpidas.png);
   }
-
   .carta h3 {
     font-size: 1em;
     padding: 5px 5px;
     margin: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-
   .buttonInfo {
     font-size: 1em;
     padding: 5px 5px;
@@ -215,25 +210,21 @@ footer {
     color: palevioletred;
     transition: ease-out 0.5s;
   }
-
   /* ARTICULO SOMOS AGUS NAILS */
   .gridArt {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     color: white;
     text-align: center;
   }
-
   .gridArt h4 {
     font-size: 0.8em;
     text-align: center;
   }
-
   .gridArt p {
     font-size: 0.5em;
     padding: 20px;
     text-align: center;
   }
-
   /* FOOTER DE TODAS LAS SECCIONES */
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -246,7 +237,6 @@ footer {
     text-align: center;
     font-size: 0.5em;
   }
-
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
@@ -272,7 +262,6 @@ footer {
     width: 95%;
     background-color: rgba(255, 255, 255, 0.251);
   }
-
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
@@ -282,17 +271,14 @@ footer {
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
-
   .divServicio {
     background-color: rgba(255, 192, 203, 0.797);
     width: 100%;
   }
-
   .divServicio img {
     width: 100%;
     display: flex;
   }
-
   .tituloServis {
     display: flex;
     justify-content: center;
@@ -302,7 +288,6 @@ footer {
     padding-bottom: 10px;
     font-weight: bold;
   }
-
   .parrafoServis {
     font-size: 1em;
     display: flex;
@@ -312,7 +297,6 @@ footer {
     padding: 10px;
     text-align: start;
   }
-
   /* SECCION DE TURNOS STYLE */
   #imgTurnos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg);
@@ -325,7 +309,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .turnos {
     font-size: 0.8em;
     color: white;
@@ -339,7 +322,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION NOSOTROS STYLE */
   #imgNosotros {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg);
@@ -352,7 +334,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .empleo {
     font-size: 0.8em;
     color: white;
@@ -366,7 +347,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION CURSOS STYLE */
   .cursoFondo {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
@@ -391,7 +371,6 @@ footer {
     text-align: center;
     width: 95%;
   }
-
   .cursoGrid {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
@@ -410,7 +389,6 @@ footer {
   .cursoGrid .card {
     background-color: rgba(255, 192, 203, 0.797);
   }
-
   .btn:hover {
     background-color: black;
     color: palevioletred;
@@ -424,7 +402,6 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
   }
-
   /* INDEX STYLE */
   /* HEADER */
   .logoPrincipal {
@@ -432,17 +409,14 @@ footer {
     margin-right: 5px;
     border-radius: 100%;
   }
-
   .tituloEmpresa {
     font-size: 0.8em;
     font-weight: bold;
   }
-
   .menu {
     color: black;
     font-size: 0.8em;
   }
-
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
   .imgHome {
     display: flex;
@@ -453,7 +427,6 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .position div {
     display: flex;
     flex-direction: column;
@@ -462,19 +435,16 @@ footer {
     text-align: center;
     color: white;
   }
-
   .textHomeUno {
     background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
     font-size: 1.1em;
     padding: 10px 5px;
   }
-
   .textHomeDos {
     font-size: 0.7em;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-
   .buttonIndex {
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
@@ -489,7 +459,6 @@ footer {
     color: palevioletred;
     transition: ease-out 0.6s;
   }
-
   /* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
   #trabajos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -500,7 +469,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   #trabajos .carta {
     color: white;
     display: flex;
@@ -511,29 +479,24 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .carta:first-child {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/kapping.png);
   }
-
   .carta:nth-child(2) {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esmaltado.jpg);
   }
-
   .carta:nth-child(3) {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esculpidas.png);
   }
-
   .carta h3 {
     font-size: 1em;
     padding: 5px 5px;
     margin: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-
   .buttonInfo {
     font-size: 1em;
     padding: 5px 5px;
@@ -549,25 +512,21 @@ footer {
     color: palevioletred;
     transition: ease-out 0.5s;
   }
-
   /* ARTICULO SOMOS AGUS NAILS */
   .gridArt {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     color: white;
     text-align: center;
   }
-
   .gridArt h4 {
     font-size: 0.8em;
     text-align: center;
   }
-
   .gridArt p {
     font-size: 0.5em;
     padding: 20px;
     text-align: center;
   }
-
   /* FOOTER DE TODAS LAS SECCIONES */
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -580,7 +539,6 @@ footer {
     text-align: center;
     font-size: 0.5em;
   }
-
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
@@ -606,7 +564,6 @@ footer {
     width: 95%;
     background-color: rgba(255, 255, 255, 0.251);
   }
-
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
@@ -616,17 +573,14 @@ footer {
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
-
   .divServicio {
     background-color: rgba(255, 192, 203, 0.797);
     width: 100%;
   }
-
   .divServicio img {
     width: 100%;
     display: flex;
   }
-
   .tituloServis {
     display: flex;
     justify-content: center;
@@ -636,7 +590,6 @@ footer {
     padding-bottom: 10px;
     font-weight: bold;
   }
-
   .parrafoServis {
     font-size: 1em;
     display: flex;
@@ -646,7 +599,6 @@ footer {
     padding: 10px;
     text-align: start;
   }
-
   /* SECCION DE TURNOS STYLE */
   #imgTurnos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg);
@@ -659,7 +611,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .turnos {
     font-size: 0.8em;
     color: white;
@@ -673,7 +624,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION NOSOTROS STYLE */
   #imgNosotros {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg);
@@ -686,7 +636,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .empleo {
     font-size: 0.8em;
     color: white;
@@ -700,7 +649,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION CURSOS STYLE */
   .cursoFondo {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
@@ -725,7 +673,6 @@ footer {
     text-align: center;
     width: 50%;
   }
-
   .cursoGrid {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
@@ -744,7 +691,6 @@ footer {
   .cursoGrid .card {
     background-color: rgba(255, 192, 203, 0.797);
   }
-
   .btn:hover {
     background-color: black;
     color: palevioletred;
@@ -758,7 +704,6 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
   }
-
   /* INDEX STYLE */
   /* HEADER */
   .logoPrincipal {
@@ -766,17 +711,14 @@ footer {
     margin-right: 5px;
     border-radius: 100%;
   }
-
   .tituloEmpresa {
     font-size: 0.8em;
     font-weight: bold;
   }
-
   .menu {
     color: black;
     font-size: 0.8em;
   }
-
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
   .imgHome {
     display: flex;
@@ -787,7 +729,6 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .position div {
     display: flex;
     flex-direction: column;
@@ -796,19 +737,16 @@ footer {
     text-align: center;
     color: white;
   }
-
   .textHomeUno {
     background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
     font-size: 1.1em;
     padding: 10px 5px;
   }
-
   .textHomeDos {
     font-size: 0.7em;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-
   .buttonIndex {
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
@@ -823,7 +761,6 @@ footer {
     color: palevioletred;
     transition: ease-out 0.6s;
   }
-
   /* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
   #trabajos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -834,7 +771,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   #trabajos .carta {
     color: white;
     display: flex;
@@ -845,29 +781,24 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .carta:first-child {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/kapping.png);
   }
-
   .carta:nth-child(2) {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esmaltado.jpg);
   }
-
   .carta:nth-child(3) {
     height: 90vh;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esculpidas.png);
   }
-
   .carta h3 {
     font-size: 1em;
     padding: 5px 5px;
     margin: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-
   .buttonInfo {
     font-size: 1em;
     padding: 5px 5px;
@@ -883,25 +814,21 @@ footer {
     color: palevioletred;
     transition: ease-out 0.5s;
   }
-
   /* ARTICULO SOMOS AGUS NAILS */
   .gridArt {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     color: white;
     text-align: center;
   }
-
   .gridArt h4 {
     font-size: 0.8em;
     text-align: center;
   }
-
   .gridArt p {
     font-size: 0.5em;
     padding: 20px;
     text-align: center;
   }
-
   /* FOOTER DE TODAS LAS SECCIONES */
   #flexFooter {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
@@ -914,7 +841,6 @@ footer {
     text-align: center;
     font-size: 0.5em;
   }
-
   /* SECCION DE SERVICIOS STYLE */
   .sectionServicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
@@ -940,7 +866,6 @@ footer {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.251);
   }
-
   /* MUESTRA DE SERVICIOS */
   .muestraServicios {
     display: grid;
@@ -950,17 +875,14 @@ footer {
     padding: 10px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
-
   .divServicio {
     background-color: rgba(255, 192, 203, 0.797);
     width: 100%;
   }
-
   .divServicio img {
     width: 100%;
     display: flex;
   }
-
   .tituloServis {
     display: flex;
     justify-content: center;
@@ -970,7 +892,6 @@ footer {
     padding-bottom: 10px;
     font-weight: bold;
   }
-
   .parrafoServis {
     font-size: 1em;
     display: flex;
@@ -980,7 +901,6 @@ footer {
     padding: 10px;
     text-align: start;
   }
-
   /* SECCION DE TURNOS STYLE */
   #imgTurnos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg);
@@ -993,7 +913,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .turnos {
     font-size: 0.8em;
     color: white;
@@ -1007,7 +926,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION NOSOTROS STYLE */
   #imgNosotros {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg);
@@ -1020,7 +938,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .empleo {
     font-size: 0.8em;
     color: white;
@@ -1034,7 +951,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   /* SECCION CURSOS STYLE */
   .cursoFondo {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
@@ -1059,7 +975,6 @@ footer {
     text-align: center;
     width: 50%;
   }
-
   .cursoGrid {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
@@ -1078,7 +993,6 @@ footer {
   .cursoGrid .card {
     background-color: rgba(255, 192, 203, 0.797);
   }
-
   .btn:hover {
     background-color: black;
     color: palevioletred;
@@ -1095,25 +1009,21 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
   .logoPrincipal {
     height: 70px;
     margin-right: 5px;
     border-radius: 100%;
   }
-
   .tituloEmpresa {
     color: black;
     font-size: 1em;
     font-weight: bold;
   }
-
   .menu {
     color: black;
     font-size: 0.8em;
     padding-right: 30px;
   }
-
   /*SECCION HOME PAGINA PRINCIPAL CON IMAGEN DE FONDO Y ENLACE DE SERVICIOS*/
   .imgHome {
     height: 100vh;
@@ -1128,14 +1038,12 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .position div {
     color: white;
     text-align: end;
     padding: 40px 20px;
     position: static;
   }
-
   .textHomeUno {
     position: static;
     background: linear-gradient(rgb(5, 7, 12), rgb(5, 7, 12));
@@ -1144,7 +1052,6 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
-
   .textHomeDos {
     position: static;
     display: flex;
@@ -1153,7 +1060,6 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .buttonIndex {
     position: static;
     font-size: 1.5em;
@@ -1169,7 +1075,6 @@ footer {
     color: palevioletred;
     transition: ease-out 0.5s;
   }
-
   /* SEGUNDA SECCION CON IMAGENES Y ENLACES ESPECIFICOS DE LOS SERVICIOS */
   #trabajos {
     background-color: rgb(30, 30, 30);
@@ -1179,7 +1084,6 @@ footer {
     gap: 10px;
     padding-top: 15px;
   }
-
   #trabajos .carta {
     position: static;
     color: white;
@@ -1191,22 +1095,18 @@ footer {
     background-size: cover;
     background-position: center center;
   }
-
   .carta:first-child {
     position: static;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/kapping.png);
   }
-
   .carta:nth-child(2) {
     position: static;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esmaltado.jpg);
   }
-
   .carta:nth-child(3) {
     position: static;
     background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/esculpidas.png);
   }
-
   .carta h3 {
     position: static;
     font-size: 2em;
@@ -1214,7 +1114,6 @@ footer {
     margin: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-
   .buttonInfo {
     position: static;
     font-size: 1.5em;
@@ -1231,7 +1130,6 @@ footer {
     color: palevioletred;
     transition: ease-out 0.5s;
   }
-
   /* ARTICULO SOMOS AGUS NAILS */
   .gridArt {
     display: grid;
@@ -1241,7 +1139,6 @@ footer {
     color: white;
     text-align: start;
   }
-
   .gridArt h4 {
     position: static;
     font-size: 1.5em;
@@ -1251,23 +1148,19 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .gridArt p {
     position: static;
     font-size: 1em;
     text-align: start;
   }
-
   /* SECCION GALERIA DE FOTOS CAROUSEL */
   #galeria img {
     height: 60vh;
   }
-
   /* FOOTER DE TODAS LAS SECCIONES */
   #flexFooter span a {
     padding: 20px;
   }
-
   #flexFooter span {
     width: 100%;
     height: 10em;
@@ -1275,11 +1168,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
   .pieFooter {
     color: white;
   }
-
   /* STYLE DE SERVICIOS*/
   .sectionServicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/imgServicio.jpg);
@@ -1305,7 +1196,6 @@ footer {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.251);
   }
-
   /* SECCION DE SERVICIOS */
   .muestraServicios {
     display: grid;
@@ -1315,19 +1205,16 @@ footer {
     padding: 20px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
   }
-
   .divServicio {
     background-color: rgba(255, 192, 203, 0.797);
     width: 100%;
     height: 40hv;
   }
-
   .divServicio img {
     width: 100%;
     height: 15em;
     display: flex;
   }
-
   .tituloServis {
     display: flex;
     justify-content: center;
@@ -1336,7 +1223,6 @@ footer {
     padding-bottom: 10px;
     font-weight: bold;
   }
-
   .parrafoServis {
     font-size: 1em;
     display: flex;
@@ -1346,7 +1232,6 @@ footer {
     padding: 10px;
     text-align: start;
   }
-
   /* TURNOS DE STYLE */
   #imgTurnos {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/salon.jpg);
@@ -1354,7 +1239,6 @@ footer {
     background-position: center center;
     background-size: cover;
   }
-
   .turnos {
     padding: 250px 400px 200px 400px;
     width: 25%;
@@ -1366,7 +1250,6 @@ footer {
     background: rgba(5, 7, 12, 0.5);
     text-align: center;
   }
-
   /* NOSOTROS STYLE */
   #imgNosotros {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/nosotros.jpeg);
@@ -1374,7 +1257,6 @@ footer {
     background-position: center center;
     background-size: cover;
   }
-
   .empleo {
     padding: 250px 400px 200px 400px;
     width: 25%;
@@ -1386,7 +1268,6 @@ footer {
     background: rgba(5, 7, 12, 0.5);
     text-align: center;
   }
-
   /* CURSOS STYLE */
   .cursoFondo {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/cursoFondo.jpg);
@@ -1411,7 +1292,6 @@ footer {
     text-align: center;
     width: 50%;
   }
-
   .cursoGrid {
     background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/ladrillo.jpg);
     display: grid;
@@ -1431,7 +1311,6 @@ footer {
   .cursoGrid .card {
     background-color: rgba(255, 192, 203, 0.797);
   }
-
   .btn:hover {
     background-color: black;
     color: palevioletred;
